@@ -8,8 +8,8 @@
 - ~~17th May 2024: pre-proposal submission~~
 - ~~27th May 2024: notification of pre-proposal acceptance~~
 - ~~End of May 2024: distribution of challenge paper template and further instructions~~
-- **(Upcoming) 16th September 2024: data and challenge paper submission**
-- 14th October 2024: benchmark ready with reports for each challenge
+- ~~16th September 2024: data and challenge paper submission~~
+- **(upcoming) 14th October 2024: benchmark ready with reports for each challenge**
 - October-November 2024: running selected models on the benchmark with analyses (the CALAMITA team will do this)
 - 4th-6th December 2024: CLIC-it conference in Pisa. Co-located half-day CALAMITA workshop scheduled for December 6th.
 
