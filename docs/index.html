@@ -351,10 +351,10 @@
             for (let i = 0; i < results_rows.length; i++) {
 
               if (best_index == i) {
-                tr.innerHTML += '<td style="font-weight:bold;background-color: white">' + results_rows[i].toPrecision(4) + '</td>';
+                tr.innerHTML += '<td style="font-weight:bold;background-color: white">' + Number(results_rows[i]).toFixed(4) + '</td>';
               }
               else {
-                tr.innerHTML += '<td>' + results_rows[i].toPrecision(4) + '</td>';
+                tr.innerHTML += '<td>' + Number(results_rows[i]).toFixed(4) + '</td>';
               }
             } 
             table.appendChild(tr);
