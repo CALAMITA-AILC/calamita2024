@@ -343,7 +343,7 @@
         data.forEach(function(object) {
             var tr = document.createElement('tr');
             tr.innerHTML = '<td>' + object.TASK + '</td>';
-            tr.innerHTML += '<td style="border-right: 1px solid black;">' + object.METRIC + '</td>';
+            tr.innerHTML += '<td style="border-right: 1px solid black;">' + object.METRIC_NAME + '</td>';
 
             var results_rows = [object.RESULT_ANITA, object.RESULT_LLAMA];
             var best_index = index_of_max(results_rows)
