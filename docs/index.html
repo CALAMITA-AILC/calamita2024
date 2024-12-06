@@ -310,6 +310,8 @@
             <th class="index_name level1" style="border-right: 1px solid black;">Metric</th>
             <th id="T_e128d_level0_col0" class="col_heading level0 col0" >LLaMAntino-3-ANITA-8B-Inst-DPO-ITA</th>
             <th id="T_e128d_level0_col1" class="col_heading level0 col1" >Llama-3.1-8B-Instruct</th>
+            <th id="T_e128d_level0_col2" class="col_heading level0 col2" >Minerva-7B-instruct-v1.0</th>
+            <th id="T_e128d_level0_col3" class="col_heading level0 col3" >Llama-3.1-70B-Instruct</th>
           </tr>
           </thead>
       </table>
@@ -345,12 +347,15 @@
             tr.innerHTML = '<td>' + object.TASK + '</td>';
             tr.innerHTML += '<td style="border-right: 1px solid black;">' + object.METRIC_NAME + '</td>';
 
-            var results_rows = [object.RESULT_ANITA, object.RESULT_LLAMA];
+            var results_rows = [object.RESULT_ANITA, object.RESULT_LLAMA_8, object.RESULT_LLAMA_70, object.RESULT_MINERVA];
             var best_index = index_of_max(results_rows)
 
             for (let i = 0; i < results_rows.length; i++) {
 
-              if (best_index == i) {
+              if (results_rows[i] == "") {
+                tr.innerHTML += '<td> </td>';
+              }
+              else if (best_index == i) {
                 tr.innerHTML += '<td style="font-weight:bold;background-color: white">' + Number(results_rows[i]).toFixed(4) + '</td>';
               }
               else {
